@@ -29,6 +29,6 @@ RUN groupadd -g ${GID} jupyter \
 
 USER jupyter
 
-EXPOSE 8888
+EXPOSE 8003
 
-CMD ["jupyter", "lab", "--ip=0.0.0.0", "--port=8888", "--no-browser"]
+CMD ["jupyter", "lab", "--ip=0.0.0.0", "--port=8003", "--no-browser"]
