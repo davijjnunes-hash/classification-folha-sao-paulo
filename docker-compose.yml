@@ -1,0 +1,12 @@
+services:
+  jupyter:
+    build: .
+    container_name: jupyter-ml
+    ports:
+      - "8003:8003"
+    volumes:
+      - ./notebooks:/app/notebooks
+      - ./data:/app/data
+      - ./src:/app/src
+    environment:
+      - JUPYTER_TOKEN=minhasenha123
